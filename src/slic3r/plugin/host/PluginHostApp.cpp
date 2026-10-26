@@ -7,6 +7,7 @@
 #include <libslic3r/Model.hpp>
 #include <libslic3r/PresetBundle.hpp>
 #include <libslic3r/AppConfig.hpp>
+#include <libslic3r/Format/ProjectStrategy.hpp>
 #include <libslic3r/Semver.hpp>
 #include <libslic3r_version.h>
 #include <slic3r/GUI/BuildCommit.hpp>
@@ -27,6 +28,7 @@
 #include <boost/filesystem/path.hpp>
 #include <boost/optional/optional.hpp>
 
+#include <cstddef>
 #include <memory>
 #include <stdexcept>
 #include <wx/app.h>
@@ -34,6 +36,7 @@
 #include <wx/thread.h>
 #include <string>
 #include <utility>
+#include <vector>
 
 namespace py = pybind11;
 
